@@ -1,0 +1,46 @@
+.footerButton{
+    text-transform: uppercase;
+    width: auto;
+    padding: 0 20px; 
+    #footerImg{
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.footerBox{
+    height: 100%;
+    width: 75%;
+    @include flexbox;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#footerBoxForPhoto{
+    width: 100%;
+height: 80%;
+    
+    .logoTxt{
+        height: 90px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+#footerImgA{
+    height: 100%;
+    width: 100%;
+    a{
+        margin-left: auto;
+    margin-right: auto;
+        height: 100%;
+    width: 100%;
+    }
+}
+

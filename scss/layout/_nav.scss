@@ -1,0 +1,23 @@
+.navButton{
+    text-transform: uppercase;
+    width: auto;
+    padding: 0 20px; 
+}
+.navMenu{
+    height: 115px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+}
+.logoTxt{
+    height: 115px;
+}
+.navBox{
+    height: 100%;
+    width: 75%;
+    @include flexbox;
+    padding-left: 150px;
+    align-items: center;
+    justify-content: space-evenly;
+}

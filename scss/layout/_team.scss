@@ -1,0 +1,47 @@
+.teamContener {
+    @include flexbox;
+    width: 1094px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 577px;
+    justify-content: space-evenly;
+}
+
+.teamArticle {
+    align-items: center;
+    @include flexbox;
+    height: 650px;
+}
+
+.team {
+    @include flexbox;
+    height: 80%;
+    width: 33.3%;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.teamImg {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactWithStaf {   
+    left: 50%; 
+    transform: translateX(17%);
+    width: 75%;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+    text-align: center;
+    padding: 10px 0;
+    
+    transition: transform 0.3s ease;
+}
+
+.contactWithStaf:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

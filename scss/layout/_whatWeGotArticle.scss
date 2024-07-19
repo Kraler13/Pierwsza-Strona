@@ -1,0 +1,39 @@
+.whatWeGotContener{
+    align-items: center;
+    @include flexbox;
+    width: 1094px;   
+    margin-left: auto;
+    margin-right: auto;
+    height: 577px;
+    justify-content: space-evenly;
+}
+
+.whatWeGotArticle{
+    align-items: center;
+    @include flexbox;
+    height: 650px;
+}
+
+.whatWeGot{
+    align-items: center;
+    @include flexbox;
+    border: 1px solid;
+    height: 90%;
+    width: 30%;
+}
+
+.whatWeGotImg{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blackButton{
+    background-color: black;
+}
+
+.whatWeGotP{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
