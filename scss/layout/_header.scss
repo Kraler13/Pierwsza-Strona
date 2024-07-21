@@ -1,51 +1,65 @@
-#motto{
-    text-transform: uppercase;
-    text-align: left;
-}
-
-#headerP{
-    text-align: left;
-}
-
-.header{
+.header {
     padding-top: 125px;
     height: 365px;
-}
 
-.headerContener{
-    width: 650px;
-    margin-left: 10%;
-    height: 100%;
-}
+    .leftImg {
+        position: absolute;
+        height: 15%;
+        z-index: 10;
+    }
 
-.leftImg{
-    position: absolute;
-    height: 15%;
-    z-index: 10;
-}
+    .headerContener {
+        width: 650px;
+        margin-left: 10%;
+        height: 100%;
 
-.squareButton{
-    background-color: blue;
-    padding: 14px 20px;
-    color: white;
-}
-.reff{
-    align-items: center;
-    @include flexbox;
-}
-.icon-play{  
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
+        h3 {
+            font-family: "Bellota", cursive;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: left;
+            letter-spacing: 2px;
+        }
 
-.borders{
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-    margin-right: 5px;
-    height: 46px;
-    width: 46px;
-    border: 1px solid;
-    border-radius: 45px;
+        h1 {
+            color: #1e2528;
+            font-size: 50px;
+            font-family: "Bellota", cursive;
+        }
+
+        p {
+            color: #555;
+            text-align: left;
+        }
+
+        .reff {
+            align-items: center;
+            @include flexbox;
+
+            .squareButton {
+                padding: 14px 20px;
+                color: white;
+                background-color: #1ba4ce;
+            }
+
+
+            .borders {
+                display: flex;
+                align-items: center;
+                margin-left: 15px;
+                margin-right: 5px;
+                height: 46px;
+                width: 46px;
+                border: 1px solid;
+                border-radius: 45px;
+
+                .icon-play {
+                    height: 30px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+        }
+    }
 }

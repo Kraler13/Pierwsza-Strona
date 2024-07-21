@@ -237,6 +237,15 @@ input[type=checkbox], input[type=radio] {
   box-sizing: border-box;
 }
 
+img {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -244,10 +253,18 @@ a {
 p {
   width: 100%;
   text-align: center;
+  line-height: 1.5;
+  color: #473452;
 }
 
 h1 {
   width: 100%;
+}
+
+h2 {
+  font-size: 42px;
+  font-family: "Bellota", cursive;
+  color: #473452;
 }
 
 h3 {
@@ -255,10 +272,12 @@ h3 {
   text-align: center;
 }
 
-.navButton {
-  text-transform: uppercase;
-  width: auto;
-  padding: 0 20px;
+#firstImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 500px;
+  z-index: 200;
 }
 
 .navMenu {
@@ -268,66 +287,64 @@ h3 {
   background-color: white;
   z-index: 100;
 }
-
-.logoTxt {
-  height: 115px;
-}
-
-.navBox {
+.navMenu .navUl {
+  list-style: none;
   height: 100%;
   width: 75%;
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 150px;
+  padding-left: 10%;
   align-items: center;
-  justify-content: space-evenly;
 }
-
-#motto {
+.navMenu .navUl .navButton {
   text-transform: uppercase;
-  text-align: left;
+  width: auto;
+  padding: 0 20px;
 }
-
-#headerP {
-  text-align: left;
+.navMenu .navUl .navButton .logoTxt {
+  height: 115px;
 }
 
 .header {
   padding-top: 125px;
   height: 365px;
 }
-
-.headerContener {
-  width: 650px;
-  margin-left: 10%;
-  height: 100%;
-}
-
-.leftImg {
+.header .leftImg {
   position: absolute;
   height: 15%;
   z-index: 10;
 }
-
-.squareButton {
-  background-color: blue;
-  padding: 14px 20px;
-  color: white;
+.header .headerContener {
+  width: 650px;
+  margin-left: 10%;
+  height: 100%;
 }
-
-.reff {
+.header .headerContener h3 {
+  font-family: "Bellota", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 2px;
+}
+.header .headerContener h1 {
+  color: #1e2528;
+  font-size: 50px;
+  font-family: "Bellota", cursive;
+}
+.header .headerContener p {
+  color: #555;
+  text-align: left;
+}
+.header .headerContener .reff {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
 }
-
-.icon-play {
-  height: 30px;
-  margin-left: auto;
-  margin-right: auto;
+.header .headerContener .reff .squareButton {
+  padding: 14px 20px;
+  color: white;
+  background-color: #1ba4ce;
 }
-
-.borders {
+.header .headerContener .reff .borders {
   display: flex;
   align-items: center;
   margin-left: 15px;
@@ -337,11 +354,14 @@ h3 {
   border: 1px solid;
   border-radius: 45px;
 }
+.header .headerContener .reff .borders .icon-play {
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .logo {
   transform: scale(0.4);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .photoGalery {
@@ -363,7 +383,7 @@ h3 {
 }
 
 .button {
-  background-color: blue;
+  background-color: #1ba4ce;
   padding: 14px 20px;
   color: white;
   margin-left: auto;
@@ -371,111 +391,55 @@ h3 {
   border-radius: 25px;
 }
 
-.text {
-  text-align: center;
-  width: 100%;
-}
-
-.contener {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+.blackButton {
+  background-color: #30383b;
 }
 
 .article {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.article .contener {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+.article .contener .text {
+  font-weight: 300;
+  color: #888888;
+}
+.article .contener #extraText {
+  color: #473452;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.whatWeGotContener {
+.servicesContener {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   width: 1094px;
   margin-left: auto;
   margin-right: auto;
-  height: 577px;
+  margin-top: 40px;
+  margin-bottom: 50px;
   justify-content: space-evenly;
 }
-
-.whatWeGotArticle {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  height: 650px;
-}
-
-.whatWeGot {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
+.servicesContener .services {
   border: 1px solid;
-  height: 90%;
   width: 30%;
+  text-align: center;
+  padding: 30px;
 }
-
-.whatWeGotImg {
+.servicesContener .services .servicesImg {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
-
-.blackButton {
-  background-color: black;
-}
-
-.whatWeGotP {
+.servicesContener .services .servicesP {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-}
-
-.footerButton {
-  text-transform: uppercase;
-  width: auto;
-  padding: 0 20px;
-}
-.footerButton #footerImg {
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footerBox {
-  height: 100%;
-  width: 75%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-
-#footerBoxForPhoto {
-  width: 100%;
-  height: 80%;
-}
-#footerBoxForPhoto .logoTxt {
-  height: 90px;
-  margin-bottom: 20px;
-}
-
-#footerImgA {
-  height: 100%;
-  width: 100%;
-}
-#footerImgA a {
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
-  width: 100%;
+  padding-bottom: 15px;
 }
 
 .teamContener {
@@ -526,4 +490,121 @@ h3 {
 
 .contactWithStaf:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.appointment {
+  width: 100%;
+  height: 600px;
+  background-color: #1ba4ce;
+  margin: auto;
+  color: white;
+}
+.appointment .contener {
+  display: flex;
+  height: 100%;
+}
+.appointment .contener .leftSide {
+  height: 100%;
+}
+.appointment .contener .leftSide .appointmentImg {
+  width: 100%;
+  height: 100%;
+}
+.appointment .contener .appointmentForm {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.appointment .contener .appointmentForm .formField {
+  color: white;
+  background-color: #1ba4ce;
+  border: none;
+  border-bottom: white solid 1px;
+  margin: 10px;
+  width: 45%;
+}
+.appointment .contener .appointmentForm #textArea {
+  width: 93%;
+}
+.appointment .contener .appointmentForm .submit {
+  margin-top: 15px;
+  border: 0px;
+  margin-left: 0px;
+  background-color: white;
+  color: black;
+}
+
+.newsLetter {
+  width: 100%;
+  background-color: #1ba4ce;
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+.newsLetter .header {
+  margin: auto;
+  max-width: 1000px;
+}
+.newsLetter .contener {
+  margin: auto;
+  max-width: 1000px;
+  padding-bottom: 100px;
+  display: flex;
+}
+.newsLetter .contener .leftSide {
+  width: 40%;
+}
+.newsLetter .contener .leftSide .contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.newsLetter .contener .leftSide .contact .logo {
+  padding-left: 10%;
+  padding-right: 15px;
+}
+.newsLetter .contener .leftSide .contact .logo #logoSize {
+  scale: 1;
+}
+.newsLetter .contener .leftSide .contact .contactText {
+  text-transform: uppercase;
+  text-align: left;
+}
+.newsLetter .contener .rightSide {
+  width: auto;
+  text-align: left;
+}
+.newsLetter .contener .rightSide .formField {
+  width: 100%;
+  padding: 15px;
+}
+.newsLetter .contener .rightSide .submit {
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.footer .logoContener {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.footer .logoContener .logoTxt {
+  height: 115px;
+}
+.footer .navUl {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .navUl .navButton {
+  text-transform: uppercase;
+  width: auto;
+  padding: 0 20px;
 }/*# sourceMappingURL=style.css.map */

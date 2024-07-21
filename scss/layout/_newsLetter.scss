@@ -1,0 +1,58 @@
+.newsLetter {
+    width: 100%;
+    background-color: #1ba4ce;
+    text-align: center;
+    margin: auto;
+    color: white;
+
+    .header {
+        margin: auto;
+        max-width: 1000px;
+    }
+
+    .contener {
+        margin: auto;
+        max-width: 1000px;
+        padding-bottom: 100px;
+        display: flex;
+
+        .leftSide {
+            width: 40%;
+
+            .contact {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+
+                .logo {
+                    padding-left: 10%;
+                    padding-right: 15px;
+
+                    #logoSize {
+                        scale: 1;
+                    }
+                }
+
+                .contactText {
+                    text-transform: uppercase;
+                    text-align: left;
+                }
+            }
+        }
+
+        .rightSide {
+            width: auto;
+            text-align: left;
+
+            .formField {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .submit {
+                margin-top: 15px;
+                margin-right: 5px;
+            }
+        }
+    }
+}

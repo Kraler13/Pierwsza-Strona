@@ -1,17 +1,22 @@
-.text{
-    text-align: center;
-    width: 100%;
-}
+.article {
+    margin-top: 100px;
 
-.contener{
-    align-items: center;
-    @include flexbox;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .contener {
 
-.article{
-    align-items: center;
-    @include flexbox;
+        text-align: center;
+        max-width: 1000px;
+        margin: auto;
+        .text {
+            font-weight: 300;
+            color: #888888;
+        }
+    
+        #extraText {
+            color: #473452;
+            text-transform: uppercase;
+            letter-spacing: 2px;       
+        }
+    }
+
+    
 }

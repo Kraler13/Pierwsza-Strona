@@ -1,46 +1,30 @@
-.footerButton{
-    text-transform: uppercase;
-    width: auto;
-    padding: 0 20px; 
-    #footerImg{
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
-.footerBox{
-    height: 100%;
-    width: 75%;
-    @include flexbox;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-#footerBoxForPhoto{
+.footer {
     width: 100%;
-height: 80%;
-    
-    .logoTxt{
-        height: 90px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    .logoContener {
         margin-bottom: 20px;
-    }
-    
-}
+        width: 100%;
+        text-align: center;
 
-#footerImgA{
-    height: 100%;
-    width: 100%;
-    a{
-        margin-left: auto;
-    margin-right: auto;
-        height: 100%;
-    width: 100%;
+        .logoTxt {
+            height: 115px;
+        }
+    }
+
+    .navUl {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .navButton {
+            text-transform: uppercase;
+            width: auto;
+            padding: 0 20px;
+
+        }
     }
 }
-

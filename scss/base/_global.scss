@@ -1,21 +1,46 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-a{
+img {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+a {
     text-decoration: none;
 }
 
-p{
+p {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    color: #473452;
+}
+
+h1 {
+    width: 100%;
+}
+
+h2{
+    font-size: 42px;
+    font-family: "Bellota", cursive;
+    color: #473452;
+}
+
+h3 {
     width: 100%;
     text-align: center;
 }
 
-h1{
-    width: 100%;
-}
-
-h3{
-    width: 100%;
-    text-align: center;
+#firstImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 500px;
+    z-index: 200;
 }
