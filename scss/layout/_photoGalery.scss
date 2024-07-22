@@ -1,16 +1,44 @@
-.photoGalery{
-    padding-top: 30px;
+.photoGalery {
     width: 100%;
     height: 400px;
     @include flexbox;
-}
+    position: relative;
 
-.photoGaleryImg{
-    width: 100%;
-    height: 100%;
-}
+    .photoGaleryReff {
+        width: 25%;
+        height: 100%;
+    }
 
-.photoGaleryReff{
-    width: 25%;
-    height: 100%;
+    .photoGaleryImg {
+        width: 100%;
+        height: 100%;
+
+
+    }
+
+    .photoOverlay {
+        width: 25%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(27, 164, 206, 0.6);
+        position: absolute;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: all .3s;
+
+        h3 {
+            color: #fff;
+            font-family: "Bellota", cursive;
+            
+        }
+    }
+
+    .photoOverlay:hover {
+        opacity: 0.8
+    }
 }

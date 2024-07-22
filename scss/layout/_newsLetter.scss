@@ -8,6 +8,15 @@
     .header {
         margin: auto;
         max-width: 1000px;
+        
+
+        h2 {
+            color: white;
+        }
+
+        p{
+            color: white;
+        }
     }
 
     .contener {
@@ -29,7 +38,7 @@
                     padding-right: 15px;
 
                     #logoSize {
-                        scale: 1;
+                        height: 50px;
                     }
                 }
 
@@ -47,11 +56,18 @@
             .formField {
                 width: 100%;
                 padding: 15px;
+                background-color: #1ba4ce;
+                border: none;
+                border-bottom: 1px solid;
+                color: white;
             }
 
             .submit {
                 margin-top: 15px;
                 margin-right: 5px;
+                color: black;
+                background-color: white;
+                border: none;
             }
         }
     }

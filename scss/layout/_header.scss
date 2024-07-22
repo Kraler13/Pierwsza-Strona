@@ -2,6 +2,15 @@
     padding-top: 125px;
     height: 365px;
 
+    #firstImage {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 40%;
+        z-index: 200;       
+    }
+    
     .leftImg {
         position: absolute;
         height: 15%;
@@ -61,5 +70,11 @@
             }
 
         }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    #firstImage {
+        display: none;
     }
 }
