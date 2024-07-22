@@ -1,6 +1,6 @@
 .teamContener {
     @include flexbox;
-    width: 1094px;
+    max-width: 1094px;
     margin-left: auto;
     margin-right: auto;
     height: 577px;

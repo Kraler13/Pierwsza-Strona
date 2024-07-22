@@ -8,20 +8,31 @@
         top: 0;
         right: 0;
         max-width: 40%;
-        z-index: 200;       
+        z-index: 200;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
     }
-    
+
     .leftImg {
         position: absolute;
         height: 15%;
         z-index: 10;
+
+        @media(max-width: 992px) {
+            height: 5%;
+        }
     }
 
     .headerContener {
-        width: 650px;
+        max-width: 650px;
         margin-left: 10%;
         height: 100%;
-
+        
+        @media(max-width: 992px) {
+            margin-left: 15px;
+        }
         h3 {
             font-family: "Bellota", cursive;
             font-weight: 700;
@@ -68,13 +79,6 @@
                     margin-right: auto;
                 }
             }
-
         }
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px){
-    #firstImage {
-        display: none;
     }
 }

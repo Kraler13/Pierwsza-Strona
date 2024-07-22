@@ -1,7 +1,7 @@
 .servicesContener {
     align-items: center;
     @include flexbox;
-    width: 1094px;
+    max-width: 1094px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;

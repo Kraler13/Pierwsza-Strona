@@ -1,19 +1,21 @@
 .photoGalery {
     width: 100%;
-    height: 400px;
     @include flexbox;
     position: relative;
 
     .photoGaleryReff {
         width: 25%;
-        height: 100%;
+        height: auto;
+
+        @media(max-width: 992px) {
+            width: 50%;
+        }
     }
 
     .photoGaleryImg {
         width: 100%;
-        height: 100%;
-
-
+        height: auto; 
+        display: block;
     }
 
     .photoOverlay {
@@ -34,7 +36,14 @@
         h3 {
             color: #fff;
             font-family: "Bellota", cursive;
-            
+        }
+
+        @media(max-width: 992px) {
+            width: 50%;
+            height: 50%;
+            #photoOverlayThr{
+                top: 50%;
+            }
         }
     }
 

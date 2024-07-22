@@ -297,6 +297,55 @@ h3 {
 .navMenu .navUl .navButton .logoTxt {
   height: 115px;
 }
+@media ((max-width: 1000px)) {
+  .navMenu {
+    display: none;
+    width: 50%;
+  }
+}
+
+.smallNavMenu {
+  display: none;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  height: 50px;
+  z-index: 100;
+  padding-bottom: 30px;
+}
+.smallNavMenu .smallLogoTxt {
+  height: 45px;
+}
+.smallNavMenu .smallMenu {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 45px;
+  padding-right: 15px;
+}
+.smallNavMenu .smallNavUl {
+  list-style: none;
+  /* display: none; */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 45px;
+  width: 200px;
+  padding-top: 100px;
+  padding-bottom: 15px;
+  height: auto;
+  background-color: blue;
+}
+.smallNavMenu .smallNavUl .closeMenu {
+  height: 30px;
+}
+@media ((max-width: 1000px)) {
+  .smallNavMenu {
+    display: block;
+  }
+}
 
 .header {
   padding-top: 125px;
@@ -310,15 +359,30 @@ h3 {
   max-width: 40%;
   z-index: 200;
 }
+@media (max-width: 992px) {
+  .header #firstImage {
+    display: none;
+  }
+}
 .header .leftImg {
   position: absolute;
   height: 15%;
   z-index: 10;
 }
+@media (max-width: 992px) {
+  .header .leftImg {
+    height: 5%;
+  }
+}
 .header .headerContener {
-  width: 650px;
+  max-width: 650px;
   margin-left: 10%;
   height: 100%;
+}
+@media (max-width: 992px) {
+  .header .headerContener {
+    margin-left: 15px;
+  }
 }
 .header .headerContener h3 {
   font-family: "Bellota", cursive;
@@ -362,29 +426,29 @@ h3 {
   margin-right: auto;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  #firstImage {
-    display: none;
-  }
-}
 .logo {
   transform: scale(0.4);
 }
 
 .photoGalery {
   width: 100%;
-  height: 400px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
 .photoGalery .photoGaleryReff {
   width: 25%;
-  height: 100%;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .photoGalery .photoGaleryReff {
+    width: 50%;
+  }
 }
 .photoGalery .photoGaleryImg {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
 }
 .photoGalery .photoOverlay {
   width: 25%;
@@ -404,6 +468,15 @@ h3 {
 .photoGalery .photoOverlay h3 {
   color: #fff;
   font-family: "Bellota", cursive;
+}
+@media (max-width: 992px) {
+  .photoGalery .photoOverlay {
+    width: 50%;
+    height: 50%;
+  }
+  .photoGalery .photoOverlay #photoOverlayThr {
+    top: 50%;
+  }
 }
 .photoGalery .photoOverlay:hover {
   opacity: 0.8;
@@ -445,7 +518,7 @@ h3 {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  width: 1094px;
+  max-width: 1094px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
@@ -477,7 +550,7 @@ h3 {
 .teamContener {
   display: flex;
   flex-wrap: wrap;
-  width: 1094px;
+  max-width: 1094px;
   margin-left: auto;
   margin-right: auto;
   height: 577px;
@@ -538,6 +611,11 @@ h3 {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 992px) {
+  .appointment .contener .leftSide {
+    display: none;
+  }
+}
 .appointment .contener .appointmentForm {
   padding: 40px;
   display: flex;
@@ -550,6 +628,11 @@ h3 {
   border-bottom: white solid 1px;
   margin: 10px;
   width: 45%;
+}
+@media (max-width: 992px) {
+  .appointment .contener .appointmentForm .formField {
+    width: 90%;
+  }
 }
 .appointment .contener .appointmentForm #textArea {
   width: 93%;

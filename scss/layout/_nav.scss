@@ -5,6 +5,7 @@
     background-color: white;
     z-index: 100;
     padding-bottom: 30px;
+
     .navUl {
         list-style: none;
         height: 100%;
@@ -22,5 +23,60 @@
                 height: 115px;
             }
         }
+    }
+
+    @media((max-width: 1000px)) {
+        display: none;
+        width: 50%;
+    }
+}
+
+.smallNavMenu {
+    display: none;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    height: 50px;
+    z-index: 100;
+    padding-bottom: 30px;
+
+    .smallLogoTxt {
+        height: 45px;
+    }
+
+    .smallMenu {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 45px;
+        padding-right: 15px;
+    }
+
+    .smallNavUl {
+        list-style: none;
+        /* display: none; */
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 45px;
+        width: 200px;
+        padding-top: 100px;
+        padding-bottom: 15px;
+        height: auto;
+        background-color: blue;
+
+        .smallNavButton {
+
+        }
+
+        .closeMenu{
+            height: 30px;
+        }
+    }
+
+    @media((max-width: 1000px)) {
+        display: block;
     }
 }
