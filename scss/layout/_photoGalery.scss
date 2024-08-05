@@ -1,11 +1,11 @@
 .photoGalery {
     width: 100%;
     @include flexbox;
-    position: relative;
-
+    
     .photoGaleryReff {
         width: 25%;
         height: auto;
+        position: relative;
 
         @media(max-width: 992px) {
             width: 50%;
@@ -19,7 +19,7 @@
     }
 
     .photoOverlay {
-        width: 25%;
+        width: 100%;
         height: 100%;
         top: 0;
         background-color: rgba(27, 164, 206, 0.6);
@@ -39,8 +39,6 @@
         }
 
         @media(max-width: 992px) {
-            width: 50%;
-            height: 50%;
             #photoOverlayThr{
                 top: 50%;
             }
@@ -48,6 +46,6 @@
     }
 
     .photoOverlay:hover {
-        opacity: 0.8
+        opacity: 1;
     }
 }

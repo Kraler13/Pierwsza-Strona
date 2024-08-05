@@ -434,11 +434,11 @@ h3 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 }
 .photoGalery .photoGaleryReff {
   width: 25%;
   height: auto;
+  position: relative;
 }
 @media (max-width: 992px) {
   .photoGalery .photoGaleryReff {
@@ -451,7 +451,7 @@ h3 {
   display: block;
 }
 .photoGalery .photoOverlay {
-  width: 25%;
+  width: 100%;
   height: 100%;
   top: 0;
   background-color: rgba(27, 164, 206, 0.6);
@@ -470,16 +470,12 @@ h3 {
   font-family: "Bellota", cursive;
 }
 @media (max-width: 992px) {
-  .photoGalery .photoOverlay {
-    width: 50%;
-    height: 50%;
-  }
   .photoGalery .photoOverlay #photoOverlayThr {
     top: 50%;
   }
 }
 .photoGalery .photoOverlay:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .button {
