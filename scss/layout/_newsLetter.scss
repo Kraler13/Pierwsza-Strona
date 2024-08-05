@@ -1,29 +1,17 @@
 .newsLetter {
     width: 100%;
     background-color: #1ba4ce;
-    text-align: center;
-    margin: auto;
-    color: white;
 
-    .header {
-        margin: auto;
-        max-width: 1000px;
-        
-
-        h2 {
-            color: white;
-        }
-
-        p{
-            color: white;
-        }
+    .whiteContener {
+        color: white;
     }
 
-    .contener {
+    .contenerForNewsLeter {
         margin: auto;
         max-width: 1000px;
         padding-bottom: 100px;
         display: flex;
+
 
         .leftSide {
             width: 40%;

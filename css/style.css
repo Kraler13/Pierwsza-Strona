@@ -644,50 +644,40 @@ h3 {
 .newsLetter {
   width: 100%;
   background-color: #1ba4ce;
-  text-align: center;
-  margin: auto;
+}
+.newsLetter .whiteContener {
   color: white;
 }
-.newsLetter .header {
-  margin: auto;
-  max-width: 1000px;
-}
-.newsLetter .header h2 {
-  color: white;
-}
-.newsLetter .header p {
-  color: white;
-}
-.newsLetter .contener {
+.newsLetter .contenerForNewsLeter {
   margin: auto;
   max-width: 1000px;
   padding-bottom: 100px;
   display: flex;
 }
-.newsLetter .contener .leftSide {
+.newsLetter .contenerForNewsLeter .leftSide {
   width: 40%;
 }
-.newsLetter .contener .leftSide .contact {
+.newsLetter .contenerForNewsLeter .leftSide .contact {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
-.newsLetter .contener .leftSide .contact .logo {
+.newsLetter .contenerForNewsLeter .leftSide .contact .logo {
   padding-left: 10%;
   padding-right: 15px;
 }
-.newsLetter .contener .leftSide .contact .logo #logoSize {
+.newsLetter .contenerForNewsLeter .leftSide .contact .logo #logoSize {
   height: 50px;
 }
-.newsLetter .contener .leftSide .contact .contactText {
+.newsLetter .contenerForNewsLeter .leftSide .contact .contactText {
   text-transform: uppercase;
   text-align: left;
 }
-.newsLetter .contener .rightSide {
+.newsLetter .contenerForNewsLeter .rightSide {
   width: auto;
   text-align: left;
 }
-.newsLetter .contener .rightSide .formField {
+.newsLetter .contenerForNewsLeter .rightSide .formField {
   width: 100%;
   padding: 15px;
   background-color: #1ba4ce;
@@ -695,7 +685,7 @@ h3 {
   border-bottom: 1px solid;
   color: white;
 }
-.newsLetter .contener .rightSide .submit {
+.newsLetter .contenerForNewsLeter .rightSide .submit {
   margin-top: 15px;
   margin-right: 5px;
   color: black;
